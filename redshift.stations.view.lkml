@@ -24,7 +24,7 @@ view: rs_stations {
     convert_tz: no
     timeframes: [year, month, date]
     ## Needs to be updated
-    sql: PARSE_DATE('%Y%m%d', ${TABLE}.begin) ;;
+    sql: ${TABLE}.begin ;;
   }
 
   dimension_group: end {
@@ -32,7 +32,7 @@ view: rs_stations {
     timeframes: [year, month, date]
     convert_tz: no
     ## Needs to be updated
-    sql: PARSE_DATE('%Y%m%d', ${TABLE}.`end`) ;;
+    sql: ${TABLE}.`end` ;;
   }
 
   dimension: call {
