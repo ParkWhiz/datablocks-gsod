@@ -163,13 +163,13 @@ view: rs_gsod {
   }
 
   dimension: mean_station_pressure {
-    hidden: yes
+#    hidden: yes
     type: number
     sql: ${TABLE}.stp ;;
   }
 
   dimension: temperature {
-    hidden: yes
+#    hidden: yes
     type: number
     sql: case when ${TABLE}.temp = 9999.9 then null else ${TABLE}.temp end ;;
   }
