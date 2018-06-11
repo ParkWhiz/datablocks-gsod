@@ -163,7 +163,7 @@ view: rs_gsod {
   }
 
   dimension: mean_station_pressure {
-#    hidden: yes
+    hidden: yes
     type: number
     sql: ${TABLE}.stp ;;
   }
