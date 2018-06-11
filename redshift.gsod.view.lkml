@@ -204,7 +204,7 @@ view: rs_gsod {
   }
 
   dimension: month {
-    hidden: yes
+#    hidden: yes
     type: string
     sql: ${TABLE}.mo ;;
   }
